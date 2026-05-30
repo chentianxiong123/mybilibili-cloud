@@ -15,6 +15,21 @@ spring:
     redis:
       host: 127.0.0.1
       port: 6379
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2036680567@qq.com
+    password: tirayqsiudbkedgg
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
   cloud:
     nacos:
       discovery:
